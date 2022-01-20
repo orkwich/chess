@@ -276,9 +276,9 @@ bool Board::isMat(enum color color)
 
 void Board::run()
 {
+    draw();
     while(window.isOpen())
     {
-        draw();
         input();
     }
 }
