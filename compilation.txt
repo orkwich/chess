@@ -1,0 +1,9 @@
+g++ -c piece.cpp -o piece.o -IC:/SFML/include -DSFML_STATIC -O3 -m64
+g++ -c board.cpp -o board.o -IC:/SFML/include -DSFML_STATIC -O3 -m64
+g++ -c draw.cpp -o draw.o -IC:/SFML/include -DSFML_STATIC -O3 -m64
+g++ -c input.cpp -o input.o -IC:/SFML/include -DSFML_STATIC -O3 -m64
+g++ -c moves.cpp -o moves.o -IC:/SFML/include -DSFML_STATIC -O3 -m64
+g++ -c attacks.cpp -o attacks.o -IC:/SFML/include -DSFML_STATIC -O3 -m64
+g++ -c main.cpp -o main.o -IC:/SFML/include -DSFML_STATIC -O3 -m64
+
+g++ main.o draw.o piece.o pawn.o board.o moves.o attacks.o input.o -o main.exe -LC:/SFML/lib -lsfml-graphics -lsfml-window -lsfml-system
